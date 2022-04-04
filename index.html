@@ -10,9 +10,18 @@
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    
+
     <link rel="stylesheet" href="assets/css/theme.css">
     <title>Arabic Keyboard Pro - The Fastest arabic keyboard</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-72LWES2GHR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-72LWES2GHR');
+    </script>
 </head>
 
 <body>
@@ -30,24 +39,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
                 </ul> -->
             </div>
         </div>
@@ -73,29 +64,33 @@
                                             <label class="custom-control-label" for="customSwitch1">
                                                 تعريب الأحرف اللاتنية
                                             </label>
-                                            <input type="checkbox" class="custom-control-input" id="customSwitch1"
-                                                checked="">
+                                            <input type="checkbox" class="custom-control-input " disabled
+                                                id="customSwitch1" checked="">
 
                                         </div>
 
                                     </div>
-                                    <textarea dir="rtl" class="form-control mb-3" id="formControlTextarea" rows="6" autofocus
-                                        placeholder="عبر عن نفسك !"></textarea>
+                                    <textarea dir="rtl" class="form-control mb-3" id="formControlTextarea" rows="4"
+                                        autofocus placeholder="عبر عن نفسك !"></textarea>
                                 </div>
                             </form>
                             <!--------- BUTTONS --------->
-                            <div class="actions my-2 d-flex justify-content-center">
+                            <div class="actions my-2 d-lg-flex justify-content-center">
 
                                 <button class="btn btn-sm btn-warning me-2" id="reverseText">
                                     <span>
+                                        Reverse text
+                                        /
                                         قلب النص
                                     </span>
                                 </button>
                                 <button class="btn btn-sm btn-danger me-2" id="delete_text">
                                     <i class="fas fa-trash-alt"></i>
                                     Delete
+                                    /
+                                    مسح
                                 </button>
-                                <button class="btn btn-primary me-2" id="openGoogle">
+                                <button class="btn btn-sm btn-primary me-2" id="openGoogle">
                                     <i class="fab fa-google"></i>
                                     Search Google
                                 </button>
@@ -105,7 +100,7 @@
                                 </button>
 
                                 <div class="dropdown me-2">
-                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    <button class="btn btn-sm btn-secondary dropdown-toggle" type="button"
                                         id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fas fa-language"></i> Translate
                                     </button>
@@ -117,7 +112,7 @@
 
 
                                 <button class="btn btn-sm btn-success me-2" id="copy">
-                                <i class="fas fa-copy"></i>
+                                    <i class="fas fa-copy"></i>
                                     Copy
                                     /
 
