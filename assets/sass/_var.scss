@@ -1,0 +1,24 @@
+
+
+
+//$blue: #0984e3;
+$indigo: #6c5ce7;
+$purple: #8f26f1;
+$pink: #e84393;
+$red: #d63031;
+$orange: #fdcb6e;
+$yellow: #ffeaa7;
+$green: #00b894;
+$teal: #25c293;
+$cyan: #6ad3c5;
+
+
+
+$input-focus-box-shadow : none;
+// MORE SCSS
+
+.modal-header {
+  background: var(--primary);
+  border-bottom: none !important;
+}
+
